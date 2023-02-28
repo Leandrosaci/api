@@ -1,6 +1,6 @@
 <?php
 
-    include_once('index.php');
+    include_once('conn.php');
 
     $sql = "SELECT * FROM controller WHERE service != 'null' ";
     $result = $conexao->query($sql);
