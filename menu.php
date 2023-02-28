@@ -1,6 +1,6 @@
 <?php
 
-    include_once('loginPhp.php');
+    include_once('index.php');
 
     $sql = "SELECT * FROM controller WHERE service != 'null' ";
     $result = $conexao->query($sql);
@@ -102,10 +102,8 @@
         <table class="content-table">
             <thead>
                 <tr >
-                    <th>codigo</th>
-                    <th>serviço</th>
-                    <th>preço</th>
-                    <th>data</th>
+                    <th>id</th>
+                    <th>nome</th>
                 </tr>
             </thead>
             <tbody>
@@ -114,9 +112,7 @@
                     {
                         echo "<tr class='tdd'>";
                         echo "<td class='tdd'>".$user_data['id']."</td>";
-                        echo "<td class='tdd'>".$user_data['service']."</td>";
-                        echo "<td class='tdd'>".$user_data['priceSerO']."</td>";
-                        echo "<td class='tdd'>".$user_data['dateService']."</td>";
+                        echo "<td class='tdd'>".$user_data['name']."</td>";
                         echo "</tr>";
                     }
                 ?>
