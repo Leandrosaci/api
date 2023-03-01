@@ -2,7 +2,7 @@
 
     include_once('conn.php');
 
-    $sql = "SELECT * FROM controller WHERE service != 'null' ";
+    $sql = "SELECT * FROM controller";
     $result = $conexao->query($sql);
 
 ?>
